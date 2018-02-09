@@ -10,9 +10,9 @@ import datetime
 
 HtmlFile = "index.html"
 SwitchList = "switches.txt"
-refreshDelay = 60 #in seconds
+refreshDelay = 30 #in seconds
 requestTimeOut = 161
-switchStartupConfigFolder = "test"
+switchStartupConfigFolder = "tftp"
 latestStartupConfigFolder = "test2"
 
 #code and stuff
@@ -117,8 +117,10 @@ while True:
         else:
             for s in varBinds:
                 s = str(s)
-                s.replace(",", " <br> ")
-                htmlString += s + " <br> "
+                parts = s.split(",")
+		for p in parts:
+			if 'Version' in p:
+				htmlString += p + " <br> "
 
         htmlFile.write(htmlString + " <button onclick='toggleDiv( " + str(index) + ")'> show config </button> <br> <br>")
 

@@ -1,6 +1,169 @@
-<head>  <link rel="stylesheet" href="main.css" media="screen" title="no title">  <script src="main.js"></script>  </head>10.35.0.1 : No SNMP response received before timeout <button onclick='toggleDiv( 0)'> show config </button> <br> <br><div id='0' style='display:none'>test2
- <br>test
- <br>test
- <br>tset
- <br></div> <br> 10.35.0.2 : No SNMP response received before timeout <button onclick='toggleDiv( 1)'> show config </button> <br> <br><div id='1' style='display:none'>test1
+<head>  <link rel="stylesheet" href="main.css" media="screen" title="no title">  <script src="main.js"></script>  </head>192.168.224.136 :  Version 15.4(3)M1 <br>  <button onclick='toggleDiv( 0)'> show config </button> <br> <br><div id='0' style='display:none'>
+ <br>!
+ <br>! Last configuration change at 13:53:18 UTC Fri Feb 9 2018
+ <br>!
+ <br>version 15.4
+ <br>service timestamps debug datetime msec
+ <br>service timestamps log datetime msec
+ <br>no service password-encryption
+ <br>!
+ <br>hostname R1
+ <br>!
+ <br>boot-start-marker
+ <br>boot-end-marker
+ <br>!
+ <br>!
+ <br>!
+ <br>no aaa new-model
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>
+ <br>
+ <br>!
+ <br>!
+ <br>ip dhcp pool Test
+ <br> network 192.168.224.0 255.255.255.0
+ <br>!
+ <br>!
+ <br>!
+ <br>no ip domain lookup
+ <br>ip cef
+ <br>no ipv6 cef
+ <br>!
+ <br>multilink bundle-name authenticated
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>cts logging verbose
+ <br>!
+ <br>!
+ <br>voice-card 0
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>license udi pid CISCO2901/K9 sn FCZ1917C167
+ <br>license boot module c2900 technology-package securityk9
+ <br>license boot module c2900 technology-package NtwkEssSuitek9
+ <br>!
+ <br>!
+ <br>archive
+ <br> path tftp://192.168.224.139/R1
+ <br> time-period 1
+ <br>!
+ <br>redundancy
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>ip ftp username sammy
+ <br>ip ftp password 123456
+ <br>! 
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>interface Embedded-Service-Engine0/0
+ <br> no ip address
+ <br> shutdown
+ <br>!
+ <br>interface GigabitEthernet0/0
+ <br> ip address 192.168.224.136 255.255.255.0
+ <br> duplex auto
+ <br> speed auto
+ <br>!
+ <br>interface GigabitEthernet0/1
+ <br> no ip address
+ <br> shutdown
+ <br> duplex auto
+ <br> speed auto
+ <br>!
+ <br>interface Serial0/0/0
+ <br> ip address 10.10.10.100 255.255.255.0
+ <br> shutdown
+ <br> clock rate 2000000
+ <br>!
+ <br>interface Serial0/0/1
+ <br> no ip address
+ <br> shutdown
+ <br> clock rate 2000000
+ <br>!
+ <br>!
+ <br>ip forward-protocol nd
+ <br>!
+ <br>no ip http server
+ <br>no ip http secure-server
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>snmp-server community public RO
+ <br>!
+ <br>control-plane
+ <br>!
+ <br> !
+ <br> !
+ <br> !
+ <br> !
+ <br>!
+ <br>mgcp behavior rsip-range tgcp-only
+ <br>mgcp behavior comedia-role none
+ <br>mgcp behavior comedia-check-media-src disable
+ <br>mgcp behavior comedia-sdp-force disable
+ <br>!
+ <br>mgcp profile default
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>!
+ <br>gatekeeper
+ <br> shutdown
+ <br>!
+ <br>!
+ <br>!
+ <br>line con 0
+ <br>line aux 0
+ <br>line 2
+ <br> no activation-character
+ <br> no exec
+ <br> transport preferred none
+ <br> transport output lat pad telnet rlogin lapb-ta mop udptn v120 ssh
+ <br> stopbits 1
+ <br>line vty 0 4
+ <br> login
+ <br> transport input none
+ <br>!
+ <br>scheduler allocate 20000 1000
+ <br>!
+ <br>end
+ <br></div> <br> 192.168.224.137 : No SNMP response received before timeout <button onclick='toggleDiv( 1)'> show config </button> <br> <br><div id='1' style='display:none'>Hellooo as dljaowdjl;awjdloja'lw doa
+ <br></div> <br> 192.168.224.138 : No SNMP response received before timeout <button onclick='toggleDiv( 2)'> show config </button> <br> <br><div id='2' style='display:none'>HELLOAOASL:KDNLKANSDLKJwaskj VINCENT
  <br></div> <br> 
